@@ -1,0 +1,135 @@
+export const axisData = {
+  chart: {
+    caption: "Revenue, Profits & Number of Employees in the Automobile Industry",
+    drawcrossline: "1",
+    yaxisname: "Revenue / Profit (in $)",
+    syaxisname: "Number of Employees",
+    showvalues: "0",
+    showanchors: "0",
+    numberprefix: "$",
+    plothighlighteffect: "fadeout",
+    theme: "candy",
+    bgColor: "#ffffff",
+    baseFontColor: "#000000",
+    captionFontColor: "#000000"
+  },
+  categories: [
+    {
+      category: [
+        { label: "Jan-2015" },
+        { label: "Apr-2015" },
+        { label: "Jul-2015" },
+        { label: "Oct-2015" },
+        { label: "Jan-2016" },
+        { label: "Apr-2016" },
+        { label: "Jul-2016" },
+        { label: "Oct-2016" },
+        { label: "Jan-2017" },
+        { label: "Apr-2017" },
+        { label: "Jul-2017" },
+        { label: "Oct-2017" },
+        { label: "Jan-2018" },
+        { label: "Apr-2018" },
+        { label: "Jul-2018" },
+        { label: "Oct-2018" },
+        { label: "Jan-2019" },
+        { label: "Apr-2019" },
+        { label: "Jul-2019" },
+        { label: "Oct-2019" },
+        { label: "Jan-2020" },
+        { label: "Apr-2020" }
+      ]
+    }
+  ],
+  dataset: [
+    {
+      seriesname: "Revenue",
+      plottooltext: "Revenue in $label : <b>$dataValue</b>",
+      data: [
+        { value: "180000" },
+        { value: "200000" },
+        { value: "210000" },
+        { value: "250000" },
+        { value: "220000" },
+        { value: "240000" },
+        { value: "260000" },
+        { value: "280000" },
+        { value: "290000" },
+        { value: "310000" },
+        { value: "330000" },
+        { value: "350000" },
+        { value: "370000" },
+        { value: "380000" },
+        { value: "400000" },
+        { value: "420000" },
+        { value: "450000" },
+        { value: "470000" },
+        { value: "490000" },
+        { value: "510000" },
+        { value: "530000" },
+        { value: "550000" }
+      ]
+    },
+    {
+      seriesname: "Profit",
+      plottooltext: "Profit in $label : <b>$dataValue</b>",
+      renderas: "area",
+      showvalues: "0",
+      data: [
+        { value: "25000" },
+        { value: "30000" },
+        { value: "32000" },
+        { value: "40000" },
+        { value: "35000" },
+        { value: "37000" },
+        { value: "40000" },
+        { value: "45000" },
+        { value: "46000" },
+        { value: "49000" },
+        { value: "52000" },
+        { value: "54000" },
+        { value: "55000" },
+        { value: "57000" },
+        { value: "60000" },
+        { value: "62000" },
+        { value: "64000" },
+        { value: "67000" },
+        { value: "69000" },
+        { value: "71000" },
+        { value: "73000" },
+        { value: "75000" }
+      ]
+    },
+    {
+      seriesname: "Number of Employees",
+      parentyaxis: "S", // Secondary Y-axis
+      renderas: "line",
+      showvalues: "0",
+      plottooltext: "$value employees",
+      data: [
+        { value: "8000" },
+        { value: "8200" },
+        { value: "8400" },
+        { value: "8600" },
+        { value: "8800" },
+        { value: "8900" },
+        { value: "9000" },
+        { value: "9200" },
+        { value: "9400" },
+        { value: "9500" },
+        { value: "9700" },
+        { value: "9900" },
+        { value: "10000" },
+        { value: "10200" },
+        { value: "10400" },
+        { value: "10600" },
+        { value: "10800" },
+        { value: "11000" },
+        { value: "11200" },
+        { value: "11400" },
+        { value: "11600" },
+        { value: "11800" }
+      ]
+    }
+  ]
+};
