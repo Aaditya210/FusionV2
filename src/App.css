@@ -1,61 +1,93 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .App {
   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh;  
-  padding: 20px; 
-  padding-top: 100px; 
-  gap: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 100px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: space-between; */
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-heading {
+  margin: 0;
+  font-size: 18px;
 }
 
-
-
-.component-container {
-  margin-bottom: 30px; 
-  width: 80%; 
-  max-width: 800px; 
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.button-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 600px;
+.sidebar ul li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #444;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: #555;
+}
+
+.content {
+  margin-left: 0;  /* Adjusted the margin-left */
+  padding: 20px;
+  flex-grow: 1;
+  overflow: hidden; 
+  z-index: 1;  /* Ensure content is on top */
+}
+
+.fusioncharts-heading {
+  color: #333;  /* Set a visible text color */
+  font-size: 24px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: #04277a; 
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
+/* Grid Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  padding: 20px;
+  overflow: hidden;
 }
 
-button:hover {
-  background-color: #8b9df1; 
+.grid-item {
+  padding: -10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(0.85);
+}
+
+.grid-item:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+}
+
+/* Label Styling */
+.label {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.label.hidden {
+  display: none;
 }

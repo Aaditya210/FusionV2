@@ -1,6 +1,6 @@
 export const axisData = {
   chart: {
-    caption: "Revenue, Profits & Number of Employees in the Automobile Industry",
+    caption: "Revenue, Profits & Number of Employees in the Energy Industry",
     drawcrossline: "1",
     yaxisname: "Revenue / Profit (in $)",
     syaxisname: "Number of Employees",
@@ -102,7 +102,7 @@ export const axisData = {
     },
     {
       seriesname: "Number of Employees",
-      parentyaxis: "S", // Secondary Y-axis
+      parentyaxis: "S", 
       renderas: "line",
       showvalues: "0",
       plottooltext: "$value employees",

@@ -1,38 +1,37 @@
 
 
-const portfolioData = {
-    chart: {
-      caption: "Recommended Portfolio Split",
-      subCaption: "For a net-worth of $1M",
-      numberprefix: "$",
-      showvalues: "1",  
-      showpercentintooltip: "0",  
-      enablemultislicing: "1",  
-      theme: "fusion"  
+const energyPortfolioData = {
+  chart: {
+    caption: "Recommended Energy Portfolio Split",
+    subCaption: "For a total energy capacity of 10,000 MWh",
+    numberprefix: "MWh",
+    showvalues: "1",  
+    showpercentintooltip: "0",  
+    enablemultislicing: "1",  
+    theme: "fusion"  
+  },
+  data: [
+    {
+      label: "Renewable Energy",
+      value: "4000"
     },
-    data: [
-      {
-        label: "Equity",
-        value: "300000"
-      },
-      {
-        label: "Debt",
-        value: "230000"
-      },
-      {
-        label: "Bullion",
-        value: "180000"
-      },
-      {
-        label: "Real-estate",
-        value: "270000"
-      },
-      {
-        label: "Insurance",
-        value: "20000"
-      }
-    ]
-  };
-  
-  export default portfolioData;
-  
+    {
+      label: "Fossil Fuels",
+      value: "3000" 
+    },
+    {
+      label: "Nuclear Energy",
+      value: "1500" 
+    },
+    {
+      label: "Hydropower",
+      value: "2000" 
+    },
+    {
+      label: "Geothermal",
+      value: "500" 
+    }
+  ]
+};
+
+export default energyPortfolioData;
